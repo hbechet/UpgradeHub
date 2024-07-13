@@ -1,0 +1,24 @@
+/* FOOTER STARTS*/
+
+#footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 1.25rem;
+    font-size: 0.75rem;
+}
+
+#footer nav ul {
+    display: flex;
+}
+
+#footer nav ul li a {
+    display: block;
+    text-decoration: none;
+    font-size: 0.70rem;
+    color: rgb(0, 89, 255);
+    padding: 0 0.5rem;
+
+    &:hover {
+        color: grey;
+    }
+}

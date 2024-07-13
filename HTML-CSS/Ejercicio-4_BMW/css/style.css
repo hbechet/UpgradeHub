@@ -4,95 +4,9 @@
 @import url('./layout.css');
 @import url('./header.css');
 @import url('./hero.css');
+@import url('./main.css');
+@import url('./footer.css');
 
-
-
-
-/* MAIN SECTION STARTS */
-
-main h2 {
-    display: inline-block;
-    color: rgba(0, 0, 0, 0.25);
-    font-size: 1rem;
-    padding: 0 0.75rem 1rem 0.75rem;
-    font-weight: 700;
-}
-
-.series {
-    display: inline-block;
-    border-bottom: 3px solid rgba(0, 0, 0, 0.05);
-    margin-bottom: 2rem;
-}
-
-main section .tipos-coches {
-    display: flex;
-    align-content: center;
-    position: relative;
-    z-index: 2;
-    border-bottom: 3px solid rgba(0, 0, 0, 0.05);
-}
-
-main section .tipos-coches ul {
-    display: flex;
-}
-
-.tipos-coches a {
-    display: block;
-    text-decoration: none;
-    color: rgba(0, 0, 0, 0.25);
-    font-size: 1rem;
-    font-weight: 700;
-    padding: 0 1rem;
-
-    &:hover {
-        color: var(--main-color);
-    }
-}
-
-.tipos-coches a.activo {
-    color: black;
-    font-size: 2rem;
-    padding: 0 1.5rem 1.5rem 1.5rem;
-    border-bottom: 3px solid var(--main-color);
-}
-
-main section .tipos-coches .flecha>a {
-    position: absolute;
-    right: 20px;
-    background-color: rgba(255, 255, 255, 0.9);
-    z-index: 1;
-
-    &:hover {
-        color: black;
-    }
-}
-
-section .grid-coches {
-    display: grid;
-
-    & article {
-        padding: 1.25rem 0;
-    }
-}
-
-.grid-coches h3 {
-    font-size: 1rem;
-    font-weight: 700;
-}
-
-.grid-coches h4 {
-    font-size: 1rem;
-    font-weight: 700;
-}
-
-article figure {
-    width: calc(100% - 1.875rem);
-
-    & a {
-        display: inline-block;
-        width: 6.25rem;
-    }
-}
 
 
 /* media queries */
@@ -101,12 +15,6 @@ article figure {
 
     section .grid-coches {
         grid-template-columns: repeat(2, 1fr);
-        gap: var(--gap);
-
-        & article {
-            padding: 1.25rem;
-            border-bottom: 0;
-        }
     }
 
     section .grid-coches article:last-child {
@@ -123,12 +31,6 @@ article figure {
 
     section .grid-coches {
         grid-template-columns: repeat(3, 1fr);
-        gap: var(--gap);
-
-        & article {
-            padding: 1.25rem;
-            border-bottom: 0;
-        }
     }
 
     section .grid-coches article:last-child {
@@ -145,12 +47,6 @@ article figure {
 
     section .grid-coches {
         grid-template-columns: repeat(4, 1fr);
-        gap: var(--gap);
-
-        & article {
-            padding: 1.25rem;
-            border-bottom: 0;
-        }
     }
 
     section .grid-coches article:last-child {

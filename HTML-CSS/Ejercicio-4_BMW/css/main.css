@@ -1,0 +1,142 @@
+/* MAIN SECTION STARTS */
+
+main h2 {
+    display: inline-block;
+    color: rgba(0, 0, 0, 0.25);
+    font-size: 1rem;
+    padding: 0 0.75rem 1rem 0.75rem;
+    font-weight: 700;
+}
+
+.series {
+    display: inline-block;
+    border-bottom: 3px solid rgba(0, 0, 0, 0.05);
+    margin-bottom: 2rem;
+}
+
+main section .tipos-coches {
+    display: flex;
+    align-content: center;
+    position: relative;
+    z-index: 2;
+    border-bottom: 3px solid rgba(0, 0, 0, 0.05);
+}
+
+main section .tipos-coches ul {
+    display: flex;
+}
+
+.tipos-coches a {
+    display: block;
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.25);
+    font-size: 1rem;
+    font-weight: 700;
+    padding: 0 1rem;
+
+    &:hover {
+        color: var(--main-color);
+    }
+}
+
+.tipos-coches a.activo {
+    color: black;
+    font-size: 2rem;
+    padding: 0 1.5rem 1.5rem 1.5rem;
+    border-bottom: 3px solid var(--main-color);
+}
+
+main section .tipos-coches .flecha>a {
+    position: absolute;
+    right: 20px;
+    background-color: rgba(255, 255, 255, 0.9);
+    z-index: 1;
+
+    &:hover {
+        color: black;
+    }
+}
+
+section .grid-coches {
+    display: grid;
+    grid-gap: 0px;
+    margin-bottom: 10rem;
+}
+
+.grid-coches h3 {
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+.grid-coches h4 {
+    font-size: 0.75rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    color: rgba(0, 0, 0, 0.25);
+
+    & a {
+        color: rgba(0, 0, 0, 0.25);
+
+        &:hover {
+            color: black;
+        }
+    }
+}
+
+.grid-coches article>a {
+    display: block;
+    text-decoration: none;
+    font-size: 0.75rem;
+    font-weight: 700;
+    color: black;
+    margin-bottom: 0.5rem;
+
+    & i {
+        color: rgba(0, 0, 0, 0.5);
+    }
+
+    &:hover {
+        color: var(--main-color);
+    }
+}
+
+#nav-bottom {
+    background-color: rgba(128, 128, 128, 0.25);
+    margin-top: 2.5rem;
+    padding: 4.5rem 0;
+}
+
+.nav-bottom hr {
+    height: 1.15px;
+    background-color: rgba(128, 128, 128, 0.30);
+    margin: 0 0 2rem 0;
+    width: 100%;
+}
+
+.nav-bottom div {
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-bottom div ul {
+    padding: 0 6rem 0 1.25rem;
+
+    & li:first-child {
+        font-size: 1rem;
+        font-weight: 700;
+        margin-bottom: 1.25rem;
+    }
+}
+
+.nav-bottom ul li a {
+    display: block;
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.40);
+    font-size: 0.75rem;
+    font-weight: 700;
+    padding: 0.25rem 0;
+
+    &:hover {
+        color: var(--main-color);
+    }
+}
