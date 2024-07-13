@@ -10,8 +10,9 @@ img {
 
 :root {
     --main-font: "Roboto", sans-serif;
+    --main-color: #0653b6;
     --font-size: 1rem;
-    --max-width: 57.5rem;
+    --max-width: 58rem;
     --gap: 1rem;
 }
 

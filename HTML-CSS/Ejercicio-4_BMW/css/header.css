@@ -1,0 +1,93 @@
+/* HEADER STARTS*/
+
+header {
+    position: relative;
+    height: 33rem;
+    background-image: url(../../images/Ej4/newhero.jpg);
+    background-image: linear-gradient(165deg, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0.75) 76%, rgba(255, 255, 255, 1) 100%), url(../../images/Ej4/newhero.jpg);
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 10rem;
+}
+
+header nav .container {
+    display: flex;
+    justify-content: space-between;
+
+    & a {
+        text-decoration: none;
+    }
+}
+
+header nav .menu {
+    display: flex;
+}
+
+header nav .menu a {
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    padding: 25px 0px;
+    color: white;
+    margin: 0 1rem;
+    font-size: 0.8rem;
+    font-weight: 500;
+
+    &:hover {
+        color: var(--main-color);
+    }
+}
+
+header nav .menu-right {
+    display: flex;
+}
+
+header nav .menu-right .icons {
+    display: flex;
+    margin: 0 1.5rem;
+}
+
+header nav .menu-right .icons a {
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    padding: 25px 0px;
+    margin: 0 1rem;
+
+    & i {
+        color: white;
+        font-size: 1rem;
+
+        &:hover {
+            color: var(--main-color);
+        }
+    }
+
+
+}
+
+header .logo-texto {
+    width: 4rem;
+
+    & span {
+        font-size: 0.4rem;
+        padding: 0.5rem 0;
+        text-align: center;
+        display: block;
+        color: black;
+        background-color: white;
+    }
+
+    & figure {
+        background-color: white;
+        padding: 0.4rem 0.8rem;
+        margin-bottom: 1px;
+    }
+}
+
+hr {
+    border: none;
+    height: 1px;
+    background-color: white;
+    max-width: calc(var(--max-width) - 3rem);
+}
