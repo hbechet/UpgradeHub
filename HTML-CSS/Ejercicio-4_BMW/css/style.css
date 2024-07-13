@@ -1,4 +1,48 @@
 @import url(./reset.css);
-@import url('https://fonts.googleapis.com/css2?family=Handlee&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css');
-@import url('./partials/layout.css');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('./layout.css');
+@import url('./header.css');
+@import url('./hero.css');
+@import url('./main.css');
+@import url('./footer.css');
+
+
+
+/* media queries */
+
+@media(min-width: 48rem) {
+
+    section .grid-coches {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    section .grid-coches article:last-child {
+        grid-column: 1/2;
+    }
+
+}
+
+@media(min-width: 50rem) {
+
+    section .grid-coches {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    section .grid-coches article:last-child {
+        grid-column: 2/3;
+    }
+
+}
+
+@media(min-width: 64rem) {
+
+    section .grid-coches {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    section .grid-coches article:last-child {
+        grid-column: 1/2;
+    }
+
+}

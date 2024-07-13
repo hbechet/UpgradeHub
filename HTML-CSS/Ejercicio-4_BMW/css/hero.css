@@ -1,0 +1,38 @@
+/* HERO STARTS*/
+
+.hero {
+    position: absolute;
+    bottom: 0;
+    padding-left: 5%;
+    padding-bottom: 0.6rem;
+    text-shadow: 0.5px 0.5px 0.5px black;
+    text-align: left;
+    color: white;
+
+    & h1 {
+        font-size: 2.5rem;
+        margin-bottom: 0.6rem;
+        font-weight: 700;
+    }
+
+    & h2 {
+        font-size: 1.3rem;
+        margin-bottom: 0.6rem;
+        font-weight: 500;
+    }
+
+    & a {
+        display: inline-block;
+        font-size: 0.8rem;
+        font-weight: 500;
+        text-decoration: none;
+        text-shadow: none;
+        color: white;
+        background-color: var(--main-color);
+        padding: 0.9rem 5rem;
+
+        &:hover {
+            background-color: grey;
+        }
+    }
+}
