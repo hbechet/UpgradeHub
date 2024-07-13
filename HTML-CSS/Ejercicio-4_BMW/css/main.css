@@ -60,7 +60,7 @@ main section .tipos-coches .flecha>a {
 section .grid-coches {
     display: grid;
     grid-gap: 0px;
-    margin-bottom: 10rem;
+    margin-bottom: 7.5rem;
 }
 
 .grid-coches h3 {
@@ -104,7 +104,49 @@ section .grid-coches {
 
 /* CAJAS PROMO STARTS*/
 
+#promociones,
+#servicios {
+    margin-bottom: 5rem;
+}
 
+#promociones div,
+#servicios div {
+    display: flex;
+    justify-content: space-between;
+}
+
+#promociones div article,
+#servicios div article {
+    width: 100%;
+    border: 2px solid rgba(128, 128, 128, 0.100);
+    margin: 0 0.35rem;
+    padding: 0.75rem;
+}
+
+#promociones div h3,
+#servicios div h3 {
+    margin: 0.75rem 0;
+    font-size: 1.75rem;
+    font-weight: 700;
+}
+
+#promociones a,
+#servicios a {
+    margin: 0.75rem 0;
+    display: block;
+    text-decoration: none;
+    font-size: 0.75rem;
+    font-weight: 700;
+    color: black;
+
+    & i {
+        color: rgba(0, 0, 0, 0.5);
+    }
+
+    &:hover {
+        color: var(--main-color);
+    }
+}
 
 
 /* CAJAS UNIVERSO STARTS*/
