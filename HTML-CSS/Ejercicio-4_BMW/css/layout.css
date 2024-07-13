@@ -9,17 +9,14 @@ img {
 }
 
 :root {
-    --primary-font: "Montserrat", sans-serif;
-    --title-font: "Handlee", cursive;
-    --main-color: #fa573F;
-    --secondary-color: #21242e;
+    --main-font: "Roboto", sans-serif;
     --font-size: 1rem;
-    --max-width: 68.75rem;
+    --max-width: 57.5rem;
     --gap: 1rem;
 }
 
 body {
-    font-family: var(--primary-font);
+    font-family: var(--main-font);
     font-size: var(--font-size);
 }
 
