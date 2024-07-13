@@ -10,7 +10,7 @@ header {
     margin-bottom: 10rem;
 }
 
-header nav .container {
+header nav .container>div {
     display: flex;
     justify-content: space-between;
 
@@ -66,28 +66,28 @@ header nav .menu-right .icons a {
 
 }
 
-header .logo-texto {
+header nav .logo-texto div figure {
     width: 4rem;
+    background-color: white;
+    padding: 0.4rem 0.8rem;
+    margin-bottom: 1px;
+    display: block;
+}
 
-    & span {
-        font-size: 0.4rem;
-        padding: 0.5rem 0;
-        text-align: center;
-        display: block;
-        color: black;
-        background-color: white;
-    }
-
-    & figure {
-        background-color: white;
-        padding: 0.4rem 0.8rem;
-        margin-bottom: 1px;
-    }
+header nav .logo-texto div span {
+    font-size: 0.4rem;
+    padding: 0.5rem 0;
+    display: block;
+    text-align: center;
+    color: black;
+    background-color: white;
 }
 
 hr {
     border: none;
-    height: 1px;
-    background-color: white;
-    max-width: calc(var(--max-width) - 3rem);
+    height: 2px;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.35);
+    max-width: calc(var(--max-width) - 6rem);
+    box-align: left;
+    margin: 0;
 }
