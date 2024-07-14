@@ -7,11 +7,11 @@ header .nav-top {
 header .nav-top div {
     display: flex;
     justify-content: space-between;
-    height: 7.5rem;
+    height: 4.5rem;
     align-items: center;
 }
 
-header .logo {
+header .logo img {
     max-width: 17.5rem;
 }
 
