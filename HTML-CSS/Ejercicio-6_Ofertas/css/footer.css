@@ -56,43 +56,55 @@ footer nav.nav-buttons div span {
 }
 
 
+
 /* PUBLI STARTS HERE */
 
 footer section.publicidad {
     background-color: var(--background-color);
 }
 
-footer section.publicidad div {
+footer section.publicidad div.container {
     display: flex;
     justify-content: space-between;
     text-align: center;
     align-items: center;
     padding: 0.75rem 0;
+    overflow: hidden;
+    padding-bottom: 1.5rem;
 }
 
-footer section.publicidad div figure {
+footer section.publicidad div.container>div>figure {
     position: relative;
-    width: 100%;
-    height: 10rem;
+    max-width: 25rem;
+    min-height: 10rem;
+    border: 1px solid var(--secondary-color);
 
     & img {
-        object-fit: cover;
+        object-fit: contain;
     }
 }
 
+footer div.magic-text {
+    position: absolute;
+    left: 15px;
+    top: 15px;
+}
+
 footer section.publicidad div:nth-child(2) {
-    margin: 0 1rem;
+    margin: 0 2rem;
 }
 
 footer section.publicidad div figure a {
     position: absolute;
     text-decoration: none;
-    position: end;
-    color: #5da132;
+    left: 15px;
+    bottom: 15px;
+    color: white;
     font-size: 0.9rem;
     font-weight: 600;
-    border: 1px solid #5da132;
+    border: 1px solid white;
     padding: 0.75rem 1rem;
+    z-index: 1;
 
     &:hover {
         color: white;
@@ -105,6 +117,7 @@ footer section.publicidad div figure a {
     }
 
 }
+
 
 
 /* NAV BOTTOM STARTS */
