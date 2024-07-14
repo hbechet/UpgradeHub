@@ -131,3 +131,25 @@ section.ofertas .grid-ofertas article .article-bottom a {
         margin-left: 0.35rem;
     }
 }
+
+section.ofertas .grid-ofertas article figure {
+    position: relative;
+}
+
+section.ofertas .grid-ofertas article figure div.oferta-especial {
+    position: absolute;
+    top: 10px;
+    padding: 1.5rem 4rem 2rem 0.35rem;
+    background-color: var(--main-color);
+    z-index: 1;
+    color: white;
+    font-size: 0.9rem;
+    overflow: hidden;
+    clip-path: polygon(0% 0%, 0% 100%, 100% 50%);
+
+    & span {
+        display: block;
+        font-weight: 600;
+        font-size: 1.25rem;
+    }
+}
