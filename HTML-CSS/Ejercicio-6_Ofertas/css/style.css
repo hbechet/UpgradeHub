@@ -1,4 +1,46 @@
 @import url(./reset.css);
-@import url('https://fonts.googleapis.com/css2?family=Handlee&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Asap:ital,wght@0,100..900;1,100..900&display=swap');
 @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css');
 @import url('./layout.css');
+@import url('./header.css');
+@import url('./main.css');
+@import url('./footer.css');
+
+
+/* NAV BOTTOM STARTS */
+
+nav.nav-bottom div {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    align-items: center;
+    padding-bottom: 5rem;
+}
+
+nav.nav-bottom div div {
+    width: 100%;
+    margin: 0.5rem 0;
+}
+
+nav.nav-bottom div h4 {
+    color: #5da132;
+    font-size: 1.25rem;
+    font-weight: 500;
+    display: block;
+}
+
+nav.nav-bottom div ul li {
+    padding: 0.25rem 0;
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+nav.nav-bottom div ul li a {
+    display: block;
+    text-decoration: none;
+    color: var(--secondary-color);
+
+    &:hover {
+        color: var(--main-color);
+    }
+}
