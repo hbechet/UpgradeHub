@@ -2,6 +2,10 @@
 
 footer {
     border-top: 2px solid #e2e2e2;
+    background-color: white;
+}
+
+footer nav.nav-buttons {
     background-color: var(--background-color);
 }
 
@@ -53,6 +57,10 @@ footer nav.nav-buttons div span {
 
 
 /* PUBLI STARTS HERE */
+
+footer section.publicidad {
+    background-color: var(--background-color);
+}
 
 footer section.publicidad div {
     display: flex;

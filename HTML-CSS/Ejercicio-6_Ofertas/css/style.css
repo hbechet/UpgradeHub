@@ -9,24 +9,40 @@
 
 /* NAV BOTTOM STARTS */
 
+nav.nav-bottom {
+    background-color: var(--background-color);
+    background-color: linear-gradient();
+}
+
 nav.nav-bottom div {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     text-align: center;
-    align-items: center;
+    align-items: top;
     padding-bottom: 5rem;
 }
 
 nav.nav-bottom div div {
-    width: 100%;
-    margin: 0.5rem 0;
+    width: auto;
+    display: block;
+}
+
+nav.nav-bottom div div.linea {
+    border-top: 2px solid #e2e2e2;
+    width: 4rem;
+    margin: 0.6rem 0.25rem;
 }
 
 nav.nav-bottom div h4 {
     color: #5da132;
     font-size: 1.25rem;
     font-weight: 500;
-    display: block;
+    margin-bottom: 1rem;
+}
+
+nav.nav-bottom div ul {
+    display: inline-block;
+    margin-right: 0.75rem;
 }
 
 nav.nav-bottom div ul li {
@@ -36,7 +52,6 @@ nav.nav-bottom div ul li {
 }
 
 nav.nav-bottom div ul li a {
-    display: block;
     text-decoration: none;
     color: var(--secondary-color);
 
