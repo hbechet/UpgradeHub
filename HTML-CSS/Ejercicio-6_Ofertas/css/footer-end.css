@@ -1,7 +1,6 @@
 /* FOOTER END STARTS HERE */
 
 footer .end-footer-top div {
-    margin-top: 0.5rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -12,36 +11,53 @@ footer .end-footer-top div div.left {
     max-width: 45rem;
     display: flex;
     justify-content: space-between;
+    font-size: 1.15rem;
+
+    & i {
+        font-size: 2rem;
+    }
 }
 
 footer .end-footer-top div div.left div {
-    width: 100%;
     margin: 0 0.75rem;
-    display: block;
+
+    & div {
+        display: inline-block;
+    }
+
+    &.align-right {
+        text-align: right;
+    }
 }
 
 footer .end-footer-top div div.left img {
-    width: 10rem;
-    display: inline-block;
+    width: 8rem;
+
 }
 
-footer .end-footer-top div div.left div span {
-    display: block;
+footer .end-footer-top div div.left div {
+    & span {
+        display: block;
+    }
 }
 
 
 footer .end-footer-top div div.right {
-    width: auto;
+    width: 12rem;
     display: block;
     justify-content: space-between;
-    font-size: 0.75rem;
+    font-size: 0.9rem;
+
+    & img {
+        max-width: 8.5rem;
+    }
 }
 
 
 /* FOOTER END BOTTOM STARTS */
 
 footer .end-footer-bottom div.container {
-    margin-top: 3rem;
+    margin-top: 2rem;
     display: flex;
     justify-content: space-between;
     align-items: left;
