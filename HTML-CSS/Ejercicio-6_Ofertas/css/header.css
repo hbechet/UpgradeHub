@@ -1,0 +1,67 @@
+/* HEADER STARTS */
+
+header .nav-top {
+    background-color: var(--background-color);
+}
+
+header .nav-top div {
+    display: flex;
+    justify-content: space-between;
+    height: 7.5rem;
+    align-items: center;
+}
+
+header .logo {
+    max-width: 17.5rem;
+}
+
+header .nav-top div .menu-right ul {
+    display: flex;
+    align-items: center;
+}
+
+header .nav-top div .menu-right a {
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    padding: 0 0.5rem 0 0.5rem;
+    color: var(--secondary-color);
+    font-size: 0.8rem;
+    border-right: 1px solid #c7c7c7;
+
+    &.tel {
+        padding-left: 1rem;
+        font-size: 1.25rem;
+        border-right: none;
+    }
+
+    &:hover {
+        color: var(--main-color);
+    }
+}
+
+header .nav-top div .menu-right a i {
+    padding-right: 0.25rem;
+}
+
+header nav.menu {
+    width: 100%;
+    border-top: 1px solid #e2e2e2;
+    border-bottom: 1px solid #e2e2e2;
+}
+
+header nav.menu div ul {
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+header nav.menu div ul a {
+    display: block;
+    text-decoration: none;
+    color: var(--secondary-color);
+
+    &:hover {
+        color: var(--main-color);
+    }
+}
