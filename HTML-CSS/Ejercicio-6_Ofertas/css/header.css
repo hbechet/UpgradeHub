@@ -24,9 +24,9 @@ header .nav-top div .menu-right a {
     display: block;
     text-decoration: none;
     text-align: center;
-    padding: 0 0.5rem 0 0.5rem;
+    padding: 0 0.5rem;
     color: var(--secondary-color);
-    font-size: 0.8rem;
+    font-size: 0.75rem;
     border-right: 1px solid #c7c7c7;
 
     &.tel {
@@ -48,6 +48,7 @@ header nav.menu {
     width: 100%;
     border-top: 1px solid #e2e2e2;
     border-bottom: 1px solid #e2e2e2;
+    margin-bottom: 1rem;
 }
 
 header nav.menu div ul {
@@ -60,8 +61,40 @@ header nav.menu div ul a {
     display: block;
     text-decoration: none;
     color: var(--secondary-color);
+    padding: 0 0.6rem;
+    font-size: 0.80rem;
 
     &:hover {
         color: var(--main-color);
     }
+
+    &.active {
+        padding: 0;
+    }
+}
+
+header nav.menu div ul li a.burger {
+    background-color: var(--main-color);
+    color: white;
+    font-size: 0.6rem;
+    margin-right: 1rem;
+    padding: 0.5rem 0.75rem;
+
+    & hr {
+        max-width: calc(100% - 0.15rem);
+        margin-top: 0.20rem;
+        border: none;
+        height: 2px;
+        border-bottom: 2px solid rgba(255, 255, 255, 1);
+    }
+
+    &:hover {
+        background-color: #c7c7c7;
+        color: var(--main-color);
+    }
+}
+
+header nav.menu div ul li a.active span {
+    border-bottom: 4px solid var(--main-color);
+    padding: 0.8rem 0.6rem;
 }
