@@ -12,6 +12,7 @@ class Todo {
         li.id = this.id;
         const removeButton = document.createElement('button');
         removeButton.textContent = '-';
+        removeButton.id = this.id;
         domElement.appendChild(li);
         li.append(removeButton);
     }
@@ -29,7 +30,14 @@ class List {
     }
 
     removeTodo(id) {
-        this.todoList = this.todoList.filter(todo => todo.id !== id);
+        this.todoList.forEach(todo => {
+            if (todo.id === id) {
+                let index = this.todoList.indexOf(todo);
+                this.todoList.splice(index, 1);
+            }
+        });
+        this.todoList.pop();
+        console.log(this.todoList);
     }
 
     showList(domElement) {
@@ -62,20 +70,26 @@ form.addEventListener('submit', event => {
         message.classList.add('empty');
     }
 
-
-
 });
 
 
-let licontainer = document.querySelector('div.li-container');
+let licontainer = document.getElementById('todo-ul');
 
-licontainer.addEventListener('mouseover', event => {
+licontainer.addEventListener('click', event => {
 
-    let removeButtonLi = document.querySelector('div.li-container li button');
-    console.log(removeButtonLi);
-    removeButtonLi.addEventListener('click', event => {
+    if (event.target.type === 'submit') {
         MyTodoList.removeTodo(event.target.id);
-    });
+
+        MyTodoList.showList(document.getElementById('todo-ul'));
+    }
+
+    console.log(MyTodoList.todoList.length)
+
+    if (MyTodoList.todoList.length === 0) {
+        message.classList.remove('empty');
+    }
+
+
 
 });
 
