@@ -1,7 +1,6 @@
 class Todo {
 
     constructor(todo, id) {
-
         this.id = id;
         this.definition = todo;
     }
@@ -30,14 +29,8 @@ class List {
     }
 
     removeTodo(id) {
-        this.todoList.forEach(todo => {
-            if (todo.id === id) {
-                let index = this.todoList.indexOf(todo);
-                this.todoList.splice(index, 1);
-            }
-        });
-        this.todoList.pop();
-        console.log(this.todoList);
+        let realID = parseInt(id);
+        this.todoList = this.todoList.filter(todo => todo.id !== realID);
     }
 
     showList(domElement) {
@@ -52,7 +45,7 @@ const MyTodoList = new List();
 
 let form = document.querySelector('.search form');
 
-let id = 0;
+let id = 1;
 
 let message = document.querySelector('div.message');
 
@@ -83,13 +76,10 @@ licontainer.addEventListener('click', event => {
         MyTodoList.showList(document.getElementById('todo-ul'));
     }
 
-    console.log(MyTodoList.todoList.length)
-
     if (MyTodoList.todoList.length === 0) {
         message.classList.remove('empty');
+        id = 0;
     }
-
-
 
 });
 
