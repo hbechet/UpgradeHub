@@ -1,1 +1,25 @@
-<p>formulario works!</p>
+<form class="mt-5" [formGroup]="newForm" (ngSubmit)="onSubmit()">
+    <div class="mb-3">
+        <label for="name" class="form-label">Título</label>
+        <input type="text" class="form-control" name="name" id="name" formControlName="titulo"
+            placeholder="Write your name here...">
+    </div>
+    <div class="mb-3">
+        <label for="surname" class="form-label">Texto</label>
+        <input type="text" class="form-control" name="surname" id="surname" formControlName="texto">
+    </div>
+    <div class="mb-3">
+        <label for="address" class="form-label">Autor</label>
+        <input type="text" class="form-control" name="address" id="address" formControlName="autor">
+    </div>
+    <div class="mb-3">
+        <label for="email" class="form-label">Imagen</label>
+        <input type="email" class="form-control" name="email" id="email" formControlName="imagen">
+    </div>
+    <div class="mb-3">
+        <label for="age" class="form-label">Categoria</label>
+        <input type="number" class="form-control" name="age" id="age" formControlName="categoria">
+    </div>
+    <input type="submit" value="Crear nuevo Post" class="btn btn-info" [disabled]="!newForm.valid">
+
+</form>
