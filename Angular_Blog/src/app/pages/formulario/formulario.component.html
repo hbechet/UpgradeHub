@@ -1,0 +1,31 @@
+<form class="mt-5" [formGroup]="newForm" (ngSubmit)="onSubmit()">
+    <div class="mb-3 form-group">
+        <label for="title" class="form-label">Título</label>
+        <input type="text" class="form-control" name="title" id="title" formControlName="titulo"
+            placeholder="Escribe aquí un título con gancho...">
+    </div>
+    <div class="mb-3 form-group">
+        <label for="text" class="form-label">Texto del Post (mínimo 100 caracteres)</label>
+        <textarea class="form-control" name="text" id="text" minlength="100" rows="3"
+            formControlName="texto"></textarea>
+    </div>
+    <div class="mb-3 form-group">
+        <label for="author" class="form-label">Autor</label>
+        <input type="text" class="form-control" name="author" id="author" formControlName="autor">
+    </div>
+    <div class="mb-4 form-group">
+        <label for="image" class="form-label">Imagen (URL)</label>
+        <input type="text" class="form-control" name="image" id="image" formControlName="imagen">
+    </div>
+    <div class="mb-3 form-group">
+        <label for="categories" class="form-label">Categoría</label>
+        <select class="form-select form-control" id="categories" formControlName="categoria">
+            <option value="general">General</option>
+            <option value="front">Front-End</option>
+            <option value="back">Back-End</option>
+            <option value="tools">Herramientas</option>
+        </select>
+    </div>
+    <input type="submit" value="Crear nuevo Post" class="btn btn-primary mt-3" [disabled]="!newForm.valid">
+
+</form>
