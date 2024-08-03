@@ -1,0 +1,11 @@
+form .ng-invalid.ng-touched {
+    border: 2px solid tomato;
+}
+
+form .ng-valid.ng-touched {
+    border: 2px solid lightgreen;
+}
+
+input:disabled {
+    background-color: grey;
+}
