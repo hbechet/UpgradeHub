@@ -30,7 +30,11 @@ export class ListaPostsComponent {
     }
   }
 
-  onSubmit() {
-
+  onSubmit($event: Event) {
+    if ($event.target) {
+      const htmlForm = $event.target as HTMLFormElement;
+      console.log(htmlForm['value']);
+      // this.postService.getByCategoria(event)
+    }
   }
 }

@@ -8,11 +8,11 @@ export class PostService {
 
   ArrPosts: Post[] = [];
 
-  today = new Date();
-
   create(Post: Post) {
-    Post.fecha = this.today;
+    const today = new Date();
+    Post.fecha = today;
     this.ArrPosts.push(Post);
+
   }
 
   getAll() {

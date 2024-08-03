@@ -1,24 +1,29 @@
+<form [formGroup]="newForm" (ngSubmit)="onSubmit($event)">
+    <div class="input-group mb-3">
+        <label class="input-group-text" for="categorias">Categoria</label>
+        <select class="form-select" id="categorias">
+            <option selected>Filtrar por...</option>
+            <option value="general">General</option>
+            <option value="front">Front-End</option>
+            <option value="back">Back-End</option>
+            <option value="tools">Herramientas</option>
+        </select>
+        <input type="submit" value="Filtrar" class="btn btn-warning" [disabled]="!newForm.valid">
+    </div>
+
+</form>
+
 <div class="row g-4">
-    <form [formGroup]="newForm" (ngSubmit)="onSubmit()">
-        <div class="mb-3 form-group">
-            <label for="categories" class="form-label">Filtra por categoría</label>
-            <select class="form-control" id="categories" formControlName="categoria">
-                <option selected>Elige ...</option>
-                <option value="general">General</option>
-                <option value="front">Front-End</option>
-                <option value="back">Back-End</option>
-                <option value="tools">Herramientas</option>
-            </select>
-        </div>
-        <input type="submit" value="Filtrar" class="btn btn-primary mt-3" [disabled]="!newForm.valid">
-    </form>
     @for(post of ArrPosts; track $index){
     <div class="col-12 col-sm-6 col-md-4">
-        <!-- <card-empleado [empleado]="emp" (empleadoBorrado)="onEmpleadoBorrado($event)"></card-empleado> -->
-        <h2>{{post.titulo}}</h2>
-        <p>{{post.texto}}</p>
-        <p>{{post.autor}}</p>
-        <img [src]="post.imagen" alt="Imagen del Post">
+        <article>
+            <h2>{{post.titulo}}</h2>
+            <img [src]="post.imagen" alt="Imagen del Post">
+            <p>{{post.texto}}</p>
+            <p><b>Autor</b>: <em>{{post.autor}}</em></p>
+            <p><b>Categoria:</b> {{post.categoria}}</p>
+            <p><b>Escrito en:</b> {{post.fecha}}</p>
+        </article>
     </div>
     }
 </div>
