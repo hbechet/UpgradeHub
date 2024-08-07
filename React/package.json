@@ -1,5 +1,5 @@
 {
   "dependencies": {
-    "bootstrap": "^5.3.3"
+    "npx": "^10.2.2"
   }
 }
